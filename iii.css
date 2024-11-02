@@ -1,0 +1,101 @@
+body{
+    margin:0; /*внешний отступ от всего*/
+    padding: 0;/* Отступ внутри*/
+    font-family:'Montserrat', sans-serif ;/* шрифт*/
+    background:#d4dff8 ;
+    font-weight:lighter;
+    
+}
+nav ul{
+    margin: 0;
+    padding: 0px;
+    height: 100%; /* Высота*/
+    width: 260px;/* Ширина*/
+    position: fixed; /* расположение: фиксированное*/
+    top: 0; /* верхний отступ сайта*/
+    left: 0;/*отступ слева*/
+    background-color:#6b6a6a ;/* цвет сфйдбфра*/
+}
+nav ul li{
+    list-style: none; /*стиль списка нет*/
+}
+nav ul li a{
+    display: block; 
+    font-family:'Montserrat', sans-serif;;
+    text-decoration: none; /*декораций текста нет*/
+    text-transform: uppercase;/* преобразование текста верхний регистор*/
+    font-size: 25px;
+    color: #a4bcf4;/*цвет буцв в навигации*/
+    position: relative;/* положение относительное*/
+    padding: 25px 0 15px 38px; /*отступ внури*/
+    font-weight:lighter;
+    
+}
+nav ul li a:before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 0%;
+    height: 100%;
+    background:#b2cbff; /* когда наводишь задний фон*/
+    border-radius: 40px 0px 0px 40px; 
+    z-index: -1;
+    transition: all 280ms ease-in-out;
+    
+}
+nav ul li a:hover { /* a:hover значит, что анимация при наводе, а не клике*/
+    color: #5386ff; /* цвет ссылок*/
+}
+nav ul li a:hover:before {
+    width: 95%;/* сколько остаётся незакруглённой части*/
+}
+.wrapper {
+    margin-left: 230px;
+}
+.section {
+    display: grid; /*дисплей сетка*/
+    place-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.section {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    text-align: left;
+}
+.box-area h3 {
+    text-transform: uppercase; /*текст "главнвя" */
+    font-size: 20px;
+    font-weight:normal;
+}
+.box-area h4 {
+    text-transform: uppercase; /*текст "главнвя" */
+    font-size: 15px;
+    
+}
+.box-area p {
+    line-height: 5 /* не знаю что это*/
+}
+.box-area {
+    width: 75%;
+}
+.logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* насколько скругление*/
+    overflow: hidden;
+    margin: 25px auto;
+}
+.logo img {
+    width: 100%;
+}
+.iii img{
+    margin-bottom: 2%; 
+    margin-left: 0%; /*отступ между картинками по-гаризонтали*/
+    height: 400px;
+    width: 400px;  
+    text-align: center;
+}
